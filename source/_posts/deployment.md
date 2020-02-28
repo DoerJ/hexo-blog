@@ -27,8 +27,8 @@ $ npm install hexo-cli -g
 
 Set up the blog
 ```bash
-$ hexo init blog_folder_name
-$ cd blog_folder_name
+$ hexo init <blog_folder_name>
+$ cd <blog_folder_name>
 ```
 
 ### Run Hexo server
@@ -65,7 +65,7 @@ A new page will pop out in browser, prompting you to log in.
 Now it's time to set up git. cd to the base folder of your blog project and do the following:
 ```bash
 $ git init
-$ heroku git:remote -a your_app_name
+$ heroku git:remote -a <your_app_name>
 ```
 Up to this point all the configurations on **Hexo** and **Heroku** are done!
 
@@ -97,12 +97,12 @@ What this command does is to generate all untracked files, that is, the changes 
 ```bash
 $ hexo deploy
 ```
-This command bundles `git add`, `git commit -m`, and `git push` into one single command. Simply as that! After entering this command, you should be able see the project building progress through terminal, and that's when your project files gets re-built and bundled into a more compact structure.
+This command bundles `git add`, `git commit -m`, and `git push` into one single command. Then you should be able see the project building progress through terminal, and that's when your project files gets re-built with Heroku Buildpacks and bundled into a more compact structure.
 
 If the project building process is successful Heorku will start deploying your blog site. In the end, you will see something like this:
 
 ![Site image](/images/heroku_02.png)
 
-Now comes the most exciting part. Go to **your_app_name.herokuapp.com** and you will see your personal blog site now is online!
+Now comes the most exciting part. Go to `<your_app_name>.herokuapp.com` and you will see your personal blog site now is online!
 
 You can also replace the heroku domain name with your customized one to make your site even more personalized. Furthermore, feel free to select and download your favorite hexo theme in [here](https://hexo.io/themes/), and embed into your site.
