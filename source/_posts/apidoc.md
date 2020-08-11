@@ -150,7 +150,7 @@ Since each time we send maximum number of simultaneous API requests that backend
 ### Conclusion 
 Working with API commands has become one of the daily routines for web developers. Invoking API requests in correct way makes client side highly responsive in terms of retrieving and rendering user data, thus enhance user experience. 
 
-There are also other more handy techniques and methods of handling multiple API calls in different cases, such as `subsceribe` and `mergeMap` provided by Angular, but all share the same nature of callback and promise. Using callback and promise wisely will not only solve most of the issues derived from asynchronous actions, but also make the code more readable and managable.
+There are also other more handy techniques and methods of handling multiple API calls in different cases, such as `subscribe` and `mergeMap` provided by Angular, but all share the same nature of callback and promise. Using callback and promise wisely will not only solve most of the issues derived from asynchronous actions, but also make the code more readable and managable.
 
 I hope you found this article useful, and stay tuned for more of my own experiences and thoughts on web development!
 
