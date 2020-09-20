@@ -5,11 +5,11 @@ tags: hexo, heroku, deployment
 ---
 Having a personal blog site is sweet, I mean a good blog site. But sometimes building up your site from flat ground could be a headache, and that makes Hexo + Heroku one of the best solutions for creating and hosting a static website.
 
-**Hexo** is a blog framework powered by NodeJS, which provides built-in `cli` tool that allows developers to create, update, and deploy the blog site within a simple interface. Of course, having a compelling UI is also an important aspect for creating a personal blog site. With the help of hundreds of community contributors, developers can customize their blog site with wide choices of open source hexo-compatible themes.
+Hexo is a blog framework powered by NodeJS, which provides built-in command line tool that allows developers to create, update, and deploy the blog site within a simple interface. Of course, having a compelling UI is also an important aspect for creating a personal blog site. With the help of hundreds of community contributors, developers can customize their blog site with wide choices of open source hexo-compatible themes.
 
 [Link to Hexo official documentation](https://hexo.io/docs/)
 
-**Heroku** has been shined as a static content hosting platform for quite a long time. And among other hosting services such as Github Pages, Heroku is one of the top choices for developers to host static web applications. Moreover, Heroku automates the bundling process to your code repository during the project build and deployment process. With this powerful add-on, the developers are able to clone and work on well-templated codebase without configuring webpack files themselves.
+Heroku has been shined as a static content hosting platform for quite a long time. And among other hosting services such as Github Pages, Heroku is one of the top choices for developers to host static web applications. Moreover, Heroku automates the bundling process to your code repository during the project build and deployment process. With this powerful add-on, the developers are able to clone and work on well-templated codebase without configuring webpack files themselves.
 
 [Heroku dev documentation](https://devcenter.heroku.com/categories/reference)
 
@@ -67,7 +67,7 @@ Now it's time to set up git. cd to the base folder of your blog project and do t
 $ git init
 $ heroku git:remote -a <your_app_name>
 ```
-Up to this point all the configurations on **Hexo** and **Heroku** are done!
+Up to this point, all the configurations on Hexo and Heroku are done!
 
 ## Deployment
 To deploy the project to Heroku, we will need some help of `hexo-deployer-heroku` which is a npm package that takes the deploy parameters from `_config.yml`, and does the job of `git add`, `git commit -m`, and `git push` with one single command. We will talk it through in detail later.
