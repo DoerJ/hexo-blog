@@ -8,9 +8,9 @@ Components are not always pre-defined upon the app initialization, they could be
 ### A simple user case in ag-grid
 One of the most important properties of ag-grid is cellRenderer which defines the view template for the cells of each column of the grid. The following code segment is a simplified version of how cellRenderer is declared and generate template for the cells. For the full details, check out [ag-grid official site](https://www.ag-grid.com/javascript-grid-cell-rendering-components/)
 ```javascript 
-function cellRenderer() {}
+function CellRenderer() {}
 
-MyCellRenderer.prototype.init = function(params) {
+CellRenderer.prototype.init = function(params) {
     // create the cell
     this.eGui = document.createElement('div');
     this.eGui.innerHTML = '<span class="my-css-class"><button class="btn-simple">Push Me</button><span class="my-value"></span></span>';
@@ -29,7 +29,7 @@ MyCellRenderer.prototype.init = function(params) {
 };
 
 // gets called once (assuming destroy hasn't been called first) when grid ready to insert the element
-MyCellRenderer.prototype.getGui = function() {
+CellRenderer.prototype.getGui = function() {
     return this.eGui;
 };
 ```
@@ -70,7 +70,7 @@ export class DynamicComponentService {
         var imports: any[];
         if(dependencies) {
             declarations = dependencies.components ? [...declarations, ...dependencies.components] : [declarations];
-            imports = dependencies.imports ? [...imports, ...dependencies.imports] : [];
+            imports = dependencies.imports ? [...imports, ...dependencies.imports] : []; 
         }
         // create a module based on the dynamic component 
         const module = NgModule({ declarations: declarations, imports: imports })(class {});
@@ -99,6 +99,37 @@ export class AppModule {
     }
 }
 ```
+>ag-grid cell renderer
+```typescript 
+function CellRenderer() {}
+
+// gets called once (assuming destroy hasn't been called first) when grid ready to insert the element
+CellRenderer.prototype.getGui = function() {
+    var valid = true;
+    var template = '<span class="my-css-class" *ngIf="valid"><button class="btn-simple" (click)="onButtonClick()">Push Me</button><span class="my-value"></span></span>';
+    var ele = document.createElement('div');
+    DynamicComponentService.create({
+        template: template,
+        params: {
+            valid: valid,
+            onButtonClick: function() { console.log('button was clicked!'); }
+        },
+        dependencies: {
+            modules: [ NgModule, FormsModule, CommonModule ]
+        }
+    }, ele, container);
+    return ele;
+};
+```
+One thing to note is that the `container` argument of DynamicComponentService is the viewContianerRef of the parent component which uses the ag-grid, and is normally passed by `ngAfterViewInit()` lifecycle method in parent component during the ag-grid initialization.
+
+### Conclusion 
+Dynamic component can be commonly applied to many user cases during app development. Having too many static components pre-defined during the app initialization could be an overkill for the scenarioes where the view templates of the dynamically loaded components are pretty simple, and this is where the dynamic component can be very beneficial in terms of code structure. From the perspective of developer, it's also easier to see the logics behind the code. 
+
+Hope you found this article useful somehow. Stay tuned for more of my thoughts on web development and I'll see you next time!
+
+
+
 
 
 
