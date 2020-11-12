@@ -15,7 +15,7 @@ deploy:
   repo: https://git.heroku.com/doerj-hexo-blog.git
 
 math:
-  mathjax: 
+  katex: 
     enable: true
 
 # # Site
