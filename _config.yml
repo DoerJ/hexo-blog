@@ -14,6 +14,10 @@ deploy:
   type: heroku
   repo: https://git.heroku.com/doerj-hexo-blog.git
 
+math:
+  mathjax: 
+    enable: true
+
 # # Site
 # title: Hexo
 # subtitle: ''
