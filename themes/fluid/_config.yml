@@ -120,7 +120,7 @@ scroll_top_arrow:  # 向顶部滚动的箭头
 # Index Page
 #---------------------------
 index:
-  banner_img: /img/post-banner.jpg  # 首页 Banner 头图，以下相同
+  banner_img: /img/banner/banner-2.jpg  # 首页 Banner 头图，以下相同
   banner_img_height: 100  # 头图高度，屏幕百分比，available: 0 - 100
   slogan:  # 首页副标题的独立设置
     enable: true  # 为 false 则不显示任何内容
@@ -139,7 +139,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: /img/post-banner.jpg
+  banner_img: /img/banner/banner-2.jpg
   banner_img_height: 70  # available: 0 - 100
   meta:  # 文章标题下方的信息
     date:  # 文章日期
