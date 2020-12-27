@@ -2,7 +2,7 @@
 title: Approaches of Optimizing Neural Network
 date: 2020-12-05
 tags: AI, neural network, deep learning, optimization
-index_img: /images/nn-optimization/mini-batch.png 
+index_img: /images/nn-optimization/oscillate.png 
 ---
 ### Optimization of neural network 
 Building up and training a neural network model could be time-consuming. To make the model robust on predicting based on the given input features, the training data must be large enough to minimize the variance so the model has acceptable performance on fitting the general testing data. When the training data gets large, the models usually takes long time to run through one single iteration and update the parameters. That makes developers hard to inspect the progress of the learning process and adjust the hyperparameters accordingly. To speed up the model learning and optimize the model perfomance, some additional techniques need to be applied to processing input data and gradient descent. 
