@@ -2,6 +2,7 @@
 title: Boil Down the Neural Network and Deep Learning
 date: 2020-11-06
 tags: AI, neural network, deep learning
+index_img: /images/gradient-descent.png
 ---
 ### The nature of neural netwrok 
 You can think of neural network as a middlelayer that makes machine has "perception" as human to the objects in the real world. The analogy of neural network is taken from the human brain. Human perceive signal inputs(i.e., the light, sound, etc) form the outside world, and the brain takes in those inputs, process in neurons and progagate through synapse, finally form the output which is the judgement to the received signals. The neural network for the machine acts similar. The machine takes in input, which is normally represented as a matrix of entities(e.g: pixels for image), compute inputs with `linear` and `activation` functions for each layer so called `hidden layer`, progagates activation vectors throughout all the hidden layers, and finally reaches to the output layer in which the predicted value of output is formed. 
@@ -27,10 +28,10 @@ The horizontal axis of the graph of the function are $w$ and $b$ respectively, a
 
 ##### gradient descent 
 Gradient descent is an optimization algorithm which iteratively takes step in the direction of steepest descent of the graph until reaches to a local minimum. The formulas for updating parameters $w$ and $b$ are as follow:
-$\frac{\partial J}{\partial w} = \frac{1}{m}X(A-Y)^T$
-$\frac{\partial J}{\partial b} = \frac{1}{m} \sum_{i=1}^m (a^{(i)}-y^{(i)})$
-$w = w - \alpha \text{ } dw$
-$b = b - \alpha \text{ } db$
+$\frac{\partial J}{\partial w} = \frac{1}{m}X(A-Y)^T,$
+$\frac{\partial J}{\partial b} = \frac{1}{m} \sum_{i=1}^m (a^{(i)}-y^{(i)}),$
+$w = w - \alpha \text{ } dw,$
+$b = b - \alpha \text{ } db,$
 
 $\alpha$ is the learning rate which defines how big the step is for each iteration of gradient descent. $\frac{\partial J}{\partial w}$ and $\frac{\partial J}{\partial b}$ are the derivatives, which are also the slopes of the cost function $J$ with respect to $w$ and $b$. The process of taking the partial derivatives of the cost function with respect to the parameters and updating the parameters with the learning rate is called backward propagation. 
 
