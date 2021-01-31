@@ -1,7 +1,7 @@
 ---
 title: Reduce Overfitting in Neural Network Models
 date: 2020-11-23
-tags: AI, neural network, deep learning, optimization
+tags: AI, machine learning, optimization
 index_img: /images/thumbnail/nn-overfitting.png
 ---
 ### Understand overfitting in neural networks

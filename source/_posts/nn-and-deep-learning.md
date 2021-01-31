@@ -1,7 +1,7 @@
 ---
 title: Boil Down the Neural Network and Deep Learning
 date: 2020-11-06
-tags: AI, neural network, deep learning
+tags: AI, machine learning
 index_img: /images/thumbnail/nn.png
 ---
 ### The nature of neural netwrok 

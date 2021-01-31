@@ -1,7 +1,7 @@
 ---
 title: Approaches of Optimizing Neural Network
 date: 2020-12-05
-tags: AI, neural network, deep learning, optimization
+tags: AI, machine learning, optimization
 index_img: /images/thumbnail/nn-speedup.png 
 ---
 ### Optimization of neural network 
