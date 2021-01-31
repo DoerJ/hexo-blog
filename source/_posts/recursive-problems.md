@@ -2,6 +2,7 @@
 title: Working with Recursive Problems in Frontend
 date: 2020-09-20
 tags: web development, recursion
+index_img: /images/thumbnail/recursion.png
 ---
 Recursion is a standard program procedure used to solve the problems recursively. We heard about recursion a lot, and it can exist in any place that you can think of. Let's take a look at one of the recursive problems which may usually be seen in frontend development. 
 

@@ -2,6 +2,7 @@
 title: How to Present List Data in Angular?
 date: 2020-07-04
 tags: web development, Angular, recursion, RxJS, angular-tree-component
+index_img: /images/thumbnail/list.jpg
 ---
 **List** is one of the most common forms of presentating data in web application. One thing that makes list different, or harder to maanage than other UI components is that list can have recusive tree structure, and presenting recusive views can be hassle for developers. Consider the following list data in array:
 ```javascript 

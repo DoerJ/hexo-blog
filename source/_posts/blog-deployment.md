@@ -1,7 +1,8 @@
 ---
-title: Build Your Blog Site with Hexo and Heroku
+title: Build A Blog Site with Hexo and Heroku
 date: 2020-02-23 21:15:21
 tags: hexo, heroku, deployment
+index_img: /images/thumbnail/heroku.jpeg
 ---
 Having a personal blog site is sweet, but sometimes building up your site from scratch could be a headache. That makes hexo and heroku one of the best solutions for building and hosting a blogging site.
 
@@ -43,7 +44,7 @@ And that's it. That's all it takes to set up your personal Hexo blog site. Now w
 ### Create a new app
 In heroku, an `app` refers to a repository where the deployed codebase will be saved on the master branch. The very first step will be creating a new app by providing a unique app name.
 
-![Site Image](/images/heroku_01.png)
+![Site Image](/images/heroku/heroku_01.png)
 
 ### Download `heroku-cli`
 Now we want to install heroku command-line tool so we can link our local branch to the remote branch on heroku using built-in `heroku git` command line, after `git` is initialized within out project folder.
@@ -99,7 +100,7 @@ This command squashes `git add`, `git commit -m`, and `git push` into one single
 
 If the deployment process is successful, you should be able to see something similar to below:
 
-![Site image](/images/heroku_02.png)
+![Site image](/images/heroku/heroku_02.png)
 
 Now comes to the exciting part. Go to `<your_app_name>.herokuapp.com` and you should be able to see your personal blog site online! You can also replace this default domain name with your customized domain to make your blog site nice-branded and even more personalized. Furthermore, feel free to download your favorite hexo theme in [here](https://hexo.io/themes/), and coorporate it with your site.
 

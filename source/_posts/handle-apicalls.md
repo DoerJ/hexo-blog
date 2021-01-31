@@ -2,6 +2,7 @@
 title: How to Handle API Calls Like a Pro?
 date: 2020-05-30
 tags: web development, API
+index_img: /images/thumbnail/api-call.png
 ---
 API is probably one of the terminologies in software development that people heard the most. API stands for Application Programming Interface which can be considered as the portal between front-end and back-end of an application. Any user action within the app, such as click, drag-and-drop, hover can trigger a HTTP request containing the API command. The back-end will then fetch data from database according to the API query parameter, and send back to browser for display. This interaction between client and server is also known as RESTful service, which is a typical web service model used in most of modern web developments nowadays. 
 

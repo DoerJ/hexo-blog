@@ -2,6 +2,7 @@
 title: Part 2 - A Look into Angular from a High-Level Perspective
 date: 2020-08-24
 tags: web development, Angular, architectural design
+index_img: /images/thumbnail/angular.png
 ---
 In the last part, we have looked into the matter of why having high scailibility of web app will benefit throughout the development process, and what are the solutions that help address the scailibility issue. By taking a brief insight of TypeScript, we have known the role of TypeScript in frontend development and how TypeScript incorporates with some of mainstream frontend frameworks, especailly Angular 2+. In this part, we'll take a look at the architecture of Angular from a high-level perspective, and how this specific architectural design guide and enforce developers to develop web app in a managable way.
 

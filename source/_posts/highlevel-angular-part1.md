@@ -2,6 +2,7 @@
 title: Part 1 - A Look into Angular from a High-Level Perspective
 date: 2020-08-11
 tags: web development, Angular, app design
+index_img: /images/thumbnail/angular.png
 ---
 ### Scalability
 When it comes to web development, the scalability is always one of the must-haves for a modern web app. Today people are more and more replying on the online busineses. The growing complexity of the business rules have driven the web app to be more scalable of expanding functionality modules. 
