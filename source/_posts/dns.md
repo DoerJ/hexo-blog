@@ -51,6 +51,13 @@ As you can see, there are different types of DNS record. The ones that are mostl
 
 Note that there is also TTL for each DNS record, indicating how long the record will be cached after each query for that DNS zone. Therefore, when you switch the hosting server for a website, the server update will not be reflected immediately, because the DNS record for the domain of the website is still in the cache and pointing to the old hosting server. Furthermore, if your DNS record has been updated and points to the new hosting server, it doesn't necessarily mean the other visitors will get the update by then since every visitor may use a different authoritative nameserver for querying the domain of your website. 
 
+### Security measure 
+Initially, the DNS lookup process was not validated with any security measure, that is, there is no way to confirm that the returned ip address exactly matches with the queried domain. Imagine the authoritative nameserver for some domains are hacked by malicious third-party, and all cached DNS records are manipulated. Then the ip address returned to the DNS resolve may leads user to the sites made by the hackers. 
+
+In order to ensure the returned ip address is trusted for the domain user is requesting for, `DNSSEC` is introduced. DNSSEC stands for DNS Security Extensions, and it aims to build a chain of trust among the hierarchy of DNS nameservers by adding digital signature to the DNS data(i.e., the response from DNS nameservers) and the organization who is in charge of each level's DNS nameserver verifies whether the signature is valid. If valid, then the DNS data can be trusted and returned to the DNS resolver. Otherwise, the ip address could be potentially malicious. 
+
+When user buy a new domain from any registrar, for example, Godaddy.com, a DNS zone for that domain will be created and a pair of public/private keys will be generated. The private key is used to sign the digital signature for the DNS data, and the signature will be stored in `RRSIG(Resource Record Signature)` and sent in the DNS query response. Along with RRSIG, the `DNSKEY` which contains the public key will also be included in the DNS data, and other nameservers(i.e., TLD nameserver) will use this public key to verify the signature. The chain goes on for TLD and root nameservers, so on and so forth, until the DNS data(i.e., the ip address for the requested domain) is returned to the DNS resolver.
+
 These are all the basic things you need to know about DNS. Hope you found this article useful, and I'll see you next time!
 
 
