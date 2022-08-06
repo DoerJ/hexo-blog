@@ -1,6 +1,6 @@
 ---
 title: Build A Blog Site with Hexo and Heroku
-date: 2020-02-23 21:15:21
+date: 2020-02-23
 tags: hexo, heroku, deployment
 index_img: /images/thumbnail/heroku.jpeg
 ---
