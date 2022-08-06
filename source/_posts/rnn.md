@@ -4,7 +4,7 @@ date: 2021-03-30
 tags: AI, machine learning, sequence model
 index_img: /images/rnn/rnn.png
 ---
-### Understand the characteristics of a sequence task 
+### Understand the characteristics of a sequence task
 ##### Sequence data
 We have previously seen feeding image data into either a general or convolutional nerual network for training, and have input data presented as vectors of image pixels in RGB channels. By learning the distribution of the pixels on the model, the neural network is able to predict and classify the objects in an image. However, there are problems that involve forms of data other than the images, for example, a text script, which is a typial type of sequence data. So, what is a sequence data and how do we define a sequence task? To put it simple, a sequence data, also known as sequential data, is represented as data values over `time`. Comparing to the image where the data values are structured in matrix spaces, sequence data is ordered by timestamps. Some examples of sequence data could be a clip of speech audio where the data is transformed into the magnitudes of the sound wave over time, a text document composed by words and sentences which are ordered by the grammatical manners, or even a video clip that is composed of a sequence of frames. 
 

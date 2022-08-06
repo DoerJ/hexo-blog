@@ -6,7 +6,7 @@ index_img: /images/thumbnail/angular-component.jpg
 ---
 Components are not always pre-defined upon the app initialization, they could be dynamically generated during the runtime. For example, some widgets need to be displayed after user performed some actions on the page, and that means additional view template needs to be inserted into the existing component template. Angular has provided serveral methods to denamically inject content into the template upon the user action, such as using `<ng-container>` as a placeholder for an incoming view and defining that view in `<ng-template>`. In this case, ng-template needs to be pre-defined in the component view and wait to be resolved. But take a step further, is there a way to dynamically define the content and inject into the DOM? Let's use ag-grid, an Angular library that incorporates data with grid layout, to help illustrate such user cases better. 
 
-### A simple user case in ag-grid
+### A simple user case in ag-grid 
 One of the most important properties of ag-grid is cellRenderer which defines the view template for the cells of each column of the grid. The following code segment is a simplified version of how cellRenderer is declared and generate template for the cells. For the full details, check out [ag-grid official site](https://www.ag-grid.com/javascript-grid-cell-rendering-components/)
 ```javascript 
 function CellRenderer() {}

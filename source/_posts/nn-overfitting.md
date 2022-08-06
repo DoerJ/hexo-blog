@@ -4,7 +4,7 @@ date: 2020-11-23
 tags: AI, machine learning, optimization
 index_img: /images/thumbnail/nn-overfitting.png
 ---
-### Understand overfitting in neural networks
+### Understand overfitting in neural networks 
 The nature of the training process for a neural network is to study the data distribution of each training sample, build up the model that well contain the distribution of the data points of the whole training set. When machine "sees" a picture, the trained neural network maps the RGB pixel values of picture onto the model to see how the data points distributed and fit in the model graph. However, there could be many cases where the neural network perform well on the training set, but has poor performance of generalizing the model beyond the training data. This phenomenon is called `data overfitting`, which means, the model fits the exisiting training data too well, therefore can't contain any other different data. The following graph demonstrates how a overfitting model differentiate from a more generalized model.
 ![Site Image](/images/thumbnail/nn-overfitting.png)
 The blue and red data points represent two classes of training data. Imagine this model predicts whether the content of a picture is a dog, and the red points could be the pixel values of a dog picture while the blue points are not. The smooth, black function curve represents a more generalized model on the training set, and the green curve is an overfitting model. The green curve is "noisy" as the model is trying to define a "clean boundary" that separates two classes of training data. Therefore, the overfitting model has high accurancy on predicting this specific set of training data, but doesn't quite apply to other general testing data. 

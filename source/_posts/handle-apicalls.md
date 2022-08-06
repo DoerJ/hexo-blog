@@ -8,7 +8,7 @@ API is probably one of the terminologies in software development that people hea
 
 In front-end development, the developer will face a lot of API invokes, especially in API-driven application where loading a page, or a single user action could trigger multiple simultaneous API calls. What are the elegant ways of invoking multiple API calls becomes the question for every front-end developer. 
 
-### A simple user case 
+### A simple user case
 Imagine we have a page that has a long list of customers, and each customer is identified by a customer id. What we want to do is scanning through the customer list, compare the status of each customer with the system settings(i.e., the default customer status settings). If the status of the customer matches with the system settings, append that customer to another list on the page. 
 ```text
 Customer List

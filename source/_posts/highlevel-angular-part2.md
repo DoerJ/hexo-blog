@@ -6,7 +6,7 @@ index_img: /images/thumbnail/angular.png
 ---
 In the last part, we have looked into the matter of why having high scailibility of web app will benefit throughout the development process, and what are the solutions that help address the scailibility issue. By taking a brief insight of TypeScript, we have known the role of TypeScript in frontend development and how TypeScript incorporates with some of mainstream frontend frameworks, especailly Angular 2+. In this part, we'll take a look at the architecture of Angular from a high-level perspective, and how this specific architectural design guide and enforce developers to develop web app in a managable way.
 
-### A way to understand a frontend framework
+### A way to understand a frontend framework 
 To understand the philosophy of a frontend framework, a good starting point would be getting senses of what problems the authors of the framework were trying to solve. 
 
 For example, Vue.js is most well-known as a `reactive` JavaScript framework. Before the very first commit of Vue.js, the author of Vue.js, Evan You was working at Google. The most of projects Evan was working on focused on the interactivity between human gesture and UI elements. To make the user interactions smooth and precise, the view components need to be highly synchronized with JavaScript data. 

@@ -73,7 +73,7 @@ buildMap(): void {
     })
 }
 ```
-Given the map and the root node, now we are able to recursively construct the tree based on the relations.
+Given the map and the root node, now we are able to recursively construct the tree based on the relations. 
 ```typescript 
 interface nodeStruct {
     id: string,

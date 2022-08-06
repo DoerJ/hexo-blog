@@ -4,7 +4,7 @@ date: 2021-03-06
 tags: computer networking, DNS, domain
 index_img: /images/thumbnail/dns.png
 ---
-### Things behind a domain 
+### Things behind a domain
 We all know that to visit a website, you have to provide browser with the domain name of that website. However, it is not the domain name that the browser sends the http request with to retrieve the website content, instead, it is the ip address of the hosting server that hosts the website you want to visit. A domain is basically the translation of an ip address of a web hosting server. An analogy that is popularly used is phonebook. To make a call to someone on your cell-phone, normally you don't memorize the actual phone number of that person. Instead, you go to the contact list on your cell-phone, find the contact name, and make the call. An ip address is like the phone number, and the domain would be the contact name you alised for that ip address. 
 ```bash
 $ ping doerj.github.io

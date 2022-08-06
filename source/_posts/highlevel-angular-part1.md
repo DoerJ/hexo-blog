@@ -11,7 +11,7 @@ Furthermore, most of web apps today are Single Page Application(SPAs) in which a
 
 SPA is more responsive since there wouldn't be any HTTP request overhead for retrieving html files, and of course, more interactive. It's not hard to see the frontend logics becomes more and more complex. **The frontend today doesn't just display the user data. It processes user data.** Having only the view components is not enough, and that's why the modern frontend frameworks such as Angular brought up concepts of `model` and `service`. Therefore, a well-grounded frontend architecture is strongly needed to maintain the app modules, and manage user data flows. 
 
-### Typescript in frontend development
+### Typescript in frontend development 
 **Scalability** may have varying definitions for software engineer of different areas. The backend software engineers will probably think of scalability more in terms of the performances of the application, such as the capabilities of resolving network traffic spikes. The frontend enginners, on the other hand, interprets scalability more as the degrees in which the application can be expanded with new functionality modules.
 
 To make the frontend app scalable, the developers need to follow certain programming paradigm that can structure app components in a matainable way. Object-Oriented Programming is definitely among those programming paradigms. Actually since ES6, it was not hard to see that JavaScript has started bringing in the concepts of OOP on top of the functional programming. And as mainstream frameworks such as `Redux` and `Angular` stepped in, OOP has been truely reinforced in frontend development.

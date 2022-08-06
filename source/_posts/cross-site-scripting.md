@@ -4,7 +4,7 @@ date: 2021-05-20
 tags: web development, security, networking
 index_img: /images/thumbnail/xss.jpg
 ---
-### How does Cross-Site Scripting work?
+### How does Cross-Site Scripting work? 
 Cross-Site Scripting(XSS) is one of the most common security attacks on the client side of the application. XSS attacks is a type of code injection, where the malicious script or a segment of code is injected in the request to the server, and the server response which contains that maliciosus code will be run by victim's browser. Depending on what the injected code does, XSS attacks can cause a wide variety of damages to the victims, including stealing sensentitive user info from cookie, redirecting users to the malicious site built by the attackers, and even internally crashing user's machine by overflowing the memory, and so on.
 
 Suppose you are a user of a financial site A(let's call it doerj.github.io), in which you usually manage your financial products and trade in stock market. After you logged in doerj.github.io, you will be directed to the url: `www.doerj.github.io/index.php?username=<user>` where the query parameter value `user` will be just the placeholder for your actual username, and this url request returns a user landing page with a page title of "Welcome back user!". What happens here, is that when you have filled in your user credentials in the log-in page, the application sends a GET request that contains your username as a query parameter to the server, and retrieve your account info from the database. The server then sends a html template(the user landing page) back to your browser, which parses your username out of the url for displaying the page title. 

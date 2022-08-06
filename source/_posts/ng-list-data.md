@@ -33,7 +33,7 @@ var menu = [
 ```
 The list can go on, and you get the idea. 
 
-### Intuition 
+### Intuition
 When comes to list in Angular, the first thought would be using the Angular native directive `*ngFor` to iterate through the items in the array. This is absolutely correct. However, when the list has one or more submenu attached to each or some of the items, using only *ngFor would not be the most efficient way. Consider the usage of *ngFor for the `menu` defined earlier:
 ```html 
 <ul id="menu">

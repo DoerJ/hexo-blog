@@ -5,7 +5,7 @@ tags: algorithms, dynamic programming
 index_img: /images/thumbnail/dp.png
 ---
 ### Approaches to solving dynamic programming problems 
-##### What is dynamic programming?
+##### What is dynamic programming? 
 When we face a problem, one of the most common mindsets is to break the problem down to subproblems, solve each subproblem individually, and finally solve the whole problem by aggregating the solution of each subproblem. Dynamic programming shares the very similar philosophy. Dynamic programming is a method which solves problem by combining the solutions to the subproblems. The key idea of this method is to use a data structure(usually a tabular structure such as array) to cache the optimal solution to each subproblem on-the-fly, known as `memorization`. The optimal values stored in the table will then be used for building up the solution to the next subproblem. When construct a dynamic programming algorithm, there are four steps to follow: 
 1. Characterize the the subproblem and its optimal solution, that is, how should we formulate the subproblem, and what are the representations of optimal value.
 2. Define the update function for the optimal solution to each subproblem. 
